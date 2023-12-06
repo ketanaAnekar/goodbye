@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yit8fla.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="next"> HOME</a>
+    </div>
+    <div class="indie">
+        <h1> I guess this is goodbye...</h1>
+    </div>
+    <div class="goods">
+        <h1> Hope you enjoyed!</h1>
+    </div>
+    <div class="sentence">
+        Seemed only right that this was the closing song...
+    </div>
+    <button id="playPauseButton" onclick="toggleAudio()">CLICK ME!</button>
+    <script>
+        var audioElement = new Audio('See You Again.mp3'); // Replace 'your-audio-file.mp3' with the path to your audio file
+        var isPlaying = false;
+
+        function toggleAudio() {
+            var button = document.getElementById('playPauseButton');
+            var body = document.body;
+
+            if (!isPlaying) {
+                // Play the audio and change the background
+                audioElement.play();
+                body.style.backgroundColor = 'url(bye.gif)'; // Replace 'your-background.gif' with the path to your background gif
+                body.style.backgroundSize = 'cover';
+                button.innerText = 'CLICK ME!';
+            } else {
+                // Pause the audio and revert the background
+                audioElement.pause();
+                body.style.backgroundColor = 'red'; // Replace 'red' with your original background color
+                button.innerText = 'CLICK ME!';
+            }
+
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>

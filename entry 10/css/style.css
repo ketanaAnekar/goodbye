@@ -1,0 +1,66 @@
+body{
+    background-color: red;
+    animation: colorChange 5s infinite alternate;
+}
+.indie{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-size: 300%;
+color:  rgb(255, 9, 255);
+text-align: center;
+position: relative;
+top: 220px;
+}
+.goods{
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 500%;
+color: rgb(174, 0, 255);
+text-align: center;
+}
+button {
+    background-color: rgb(174, 0, 255);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: 700px;
+    top: 30px;
+}
+.sentence{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+    color:  rgb(0, 0, 0);
+
+}
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+.next{
+    position: relative;
+    font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: italic; 
+
+}
